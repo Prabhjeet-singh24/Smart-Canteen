@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Create account · Smart Canteen</title>
+<link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/auth.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body data-page="register">
+
+<div class="auth-page">
+<aside class="auth-side"><a class="brand" href="index.html"><img src="assets/images/logo.svg" alt=""><span>Smart <b>Canteen</b></span></a><h2>Join Smart Canteen</h2><p>Create your free account to order food, save time and track every order.</p><div class="emoji-row" aria-hidden="true">🍛 🥟 ☕ 🍔</div></aside>
+<main class="auth-main"><div class="auth-box">
+  <div class="auth-top"><a class="brand" href="index.html"><img src="assets/images/logo.svg" alt=""><span>Smart <b>Canteen</b></span></a></div>
+  <h1>Create your account</h1><p class="sub">It only takes a minute.</p>
+  <form id="register-form" novalidate>
+    <div class="form-alert hidden"></div>
+    <div class="form-group"><label for="name">Full name</label><input class="input" id="name" name="name" autocomplete="name" maxlength="60" required><div class="field-error" data-error-for="name"></div></div>
+    <div class="form-group"><label for="email">Email</label><input class="input" id="email" name="email" type="email" autocomplete="email" required><div class="field-error" data-error-for="email"></div></div>
+    <div class="form-row">
+      <div class="form-group"><label for="phone">Phone number</label><input class="input" id="phone" name="phone" type="tel" autocomplete="tel" maxlength="20" required><div class="field-error" data-error-for="phone"></div></div>
+      <div class="form-group"><label for="student_id">Student ID</label><input class="input" id="student_id" name="student_id" maxlength="20" required><div class="field-error" data-error-for="student_id"></div></div>
+    </div>
+    <div class="form-group"><label for="password">Password</label><div class="pw-wrap"><input class="input" id="password" name="password" type="password" autocomplete="new-password" required><button type="button" class="pw-toggle" aria-label="Show password">👁️</button></div><div class="pw-meter"><span></span></div><div class="form-hint">At least 8 characters with a letter and a digit.</div><div class="field-error" data-error-for="password"></div></div>
+    <div class="form-group"><label for="confirm_password">Confirm password</label><div class="pw-wrap"><input class="input" id="confirm_password" name="confirm_password" type="password" autocomplete="new-password" required><button type="button" class="pw-toggle" aria-label="Show password">👁️</button></div><div class="field-error" data-error-for="confirm_password"></div></div>
+    <button class="btn btn-primary btn-block" type="submit">Create account</button>
+  </form>
+  <div class="auth-links">Already registered? <a href="login.html">Sign in</a></div>
+</div></main></div>
+<div id="toast-root"></div>
+<script src="js/config.js"></script>
+<script src="js/main.js"></script>
+<script src="js/auth.js"></script>
+</body>
+</html>

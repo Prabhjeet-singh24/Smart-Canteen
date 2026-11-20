@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reports · Smart Canteen</title>
+<link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/dashboard.css">
+<link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body class="admin" data-page="admin-reports" data-root="../">
+<div id="admin-sidebar"></div>
+<div class="admin-wrap">
+  <header id="admin-topbar"></header>
+  <main class="admin-content">
+    <div class="kpi-grid" id="report-kpis"></div>
+    <p class="muted" id="report-note"></p>
+    <div class="two-col">
+      <section class="card panel"><h3>Revenue <span class="tabs" id="chart-tabs"><button data-mode="daily" class="active">Daily</button><button data-mode="weekly">Weekly</button><button data-mode="monthly">Monthly</button></span></h3><p class="muted" id="chart-summary" style="margin-top:-.4rem"></p><div id="chart"></div></section>
+      <section class="card panel"><h3>Most popular items</h3><div id="report-popular"></div></section>
+    </div>
+  </main>
+</div>
+<div id="toast-root"></div>
+<script src="../js/config.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Profile · Smart Canteen</title>
+<link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body data-page="profile">
+<div id="site-header"></div>
+
+<main><div class="container">
+  <div class="page-head"><h1>My Profile</h1></div>
+  <div class="profile-layout">
+    <aside class="card profile-card">
+      <div class="avatar avatar-lg" id="profile-avatar">?</div>
+      <h2 id="profile-name">&nbsp;</h2><p class="muted">Customer account</p>
+      <div class="profile-facts" id="profile-facts"></div>
+      <button class="btn btn-danger-outline btn-block" id="profile-logout" style="margin-top:1.5rem">🚪 Logout</button>
+    </aside>
+    <div class="stack">
+      <section class="card card-pad">
+        <div class="section-head" style="margin-bottom:1rem"><h2 style="font-size:1.3rem">Personal details</h2><button class="btn btn-outline btn-sm" id="edit-profile-btn">✏️ Edit profile</button></div>
+        <div id="profile-view" class="muted">Your details are shown on the left. Click “Edit profile” to change them.</div>
+        <form id="profile-form" class="hidden" novalidate>
+          <div class="form-alert hidden"></div>
+          <div class="form-row">
+            <div class="form-group"><label for="p-name">Full name</label><input class="input" id="p-name" name="name" maxlength="60" required><div class="field-error" data-error-for="name"></div></div>
+            <div class="form-group"><label for="p-email">Email</label><input class="input" id="p-email" name="email" type="email" required><div class="field-error" data-error-for="email"></div></div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label for="p-phone">Phone number</label><input class="input" id="p-phone" name="phone" type="tel" maxlength="20" required><div class="field-error" data-error-for="phone"></div></div>
+            <div class="form-group"><label for="p-sid">Student ID</label><input class="input" id="p-sid" name="student_id" maxlength="20" required><div class="field-error" data-error-for="student_id"></div></div>
+          </div>
+          <div style="display:flex;gap:.7rem"><button class="btn btn-primary" type="submit">Save changes</button><button class="btn btn-ghost" type="button" id="cancel-edit">Cancel</button></div>
+        </form>
+      </section>
+      <section class="card card-pad">
+        <h2 style="font-size:1.3rem">Change password</h2>
+        <form id="password-form" novalidate>
+          <div class="form-alert hidden"></div>
+          <div class="form-group"><label for="cp">Current password</label><div class="pw-wrap"><input class="input" id="cp" name="current_password" type="password" autocomplete="current-password"><button type="button" class="pw-toggle" aria-label="Show password">👁️</button></div><div class="field-error" data-error-for="current_password"></div></div>
+          <div class="form-row">
+            <div class="form-group"><label for="np">New password</label><div class="pw-wrap"><input class="input" id="np" name="new_password" type="password" autocomplete="new-password"><button type="button" class="pw-toggle" aria-label="Show password">👁️</button></div><div class="field-error" data-error-for="new_password"></div></div>
+            <div class="form-group"><label for="cn">Confirm new password</label><div class="pw-wrap"><input class="input" id="cn" name="confirm_password" type="password" autocomplete="new-password"><button type="button" class="pw-toggle" aria-label="Show password">👁️</button></div><div class="field-error" data-error-for="confirm_password"></div></div>
+          </div>
+          <button class="btn btn-primary" type="submit">Update password</button>
+        </form>
+      </section>
+    </div>
+  </div>
+</div></main>
+<div id="site-footer"></div>
+<div id="toast-root"></div>
+<script src="js/config.js"></script>
+<script src="js/main.js"></script>
+<script src="js/auth.js"></script>
+</body>
+</html>

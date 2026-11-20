@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home · Smart Canteen</title>
+<link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body data-page="home">
+<div id="site-header"></div>
+
+<main>
+<section class="hero"><div class="container">
+  <div class="hero-inner">
+    <div>
+      <h1 id="greeting">Welcome to Smart Canteen! 👋</h1>
+      <p class="lead" id="greeting-sub">Skip the queue. Order your favourite meals in a few taps and pick them up fresh.</p>
+      <div class="hero-actions">
+        <a class="btn btn-white" href="menu.html">🍽️ View Menu</a>
+        <a class="btn btn-outline" id="my-orders-btn" href="orders.html">📦 My Orders</a>
+      </div>
+    </div>
+    <div class="hero-img"><img src="assets/images/hero.svg" alt="Delicious canteen food"></div>
+  </div>
+  <div class="stats-grid" id="stats"></div>
+</div></section>
+
+<section class="section"><div class="container">
+  <div class="section-head"><div><h2>Food categories</h2><p>Pick a category to jump straight to the dishes.</p></div><a class="btn btn-ghost btn-sm" href="menu.html">See all →</a></div>
+  <div id="categories"></div>
+</div></section>
+
+<section class="section" style="padding-top:0"><div class="container">
+  <div class="section-head"><div><h2>Popular right now 🔥</h2><p>Student favourites, freshly prepared.</p></div><a class="btn btn-ghost btn-sm" href="menu.html">Full menu →</a></div>
+  <div id="popular"></div>
+</div></section>
+
+<section class="section" style="padding-top:0"><div class="container">
+  <div class="section-head"><div><h2>Special offers</h2><p>Ideas to make your meal go further.</p></div></div>
+  <div class="offer-grid">
+    <div class="offer-card offer-1" data-emoji="🥟"><h3>Snack &amp; Sip</h3><p>Pair a Samosa or Vada Pav with a hot Masala Chai — the classic canteen break.</p><a class="btn btn-white btn-sm" href="menu.html?category=3">Browse snacks</a></div>
+    <div class="offer-card offer-2" data-emoji="🍱"><h3>Full meal, fair price</h3><p>Veg Thali, Rajma Chawal and biryani — hearty lunches that keep you going.</p><a class="btn btn-white btn-sm" href="menu.html?category=2">See meals</a></div>
+    <div class="offer-card offer-3" data-emoji="🍨"><h3>Sweet finish</h3><p>Gulab Jamun, brownies and ice cream to round off your order.</p><a class="btn btn-white btn-sm" href="menu.html?category=6">View desserts</a></div>
+  </div>
+</div></section>
+</main>
+<div id="site-footer"></div>
+<div id="toast-root"></div>
+<script src="js/config.js"></script>
+<script src="js/main.js"></script>
+<script src="js/menu.js"></script>
+</body>
+</html>

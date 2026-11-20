@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Menu · Smart Canteen</title>
+<link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body data-page="menu">
+<div id="site-header"></div>
+
+<main><div class="container">
+  <div class="page-head"><h1>Our Menu</h1><p class="muted">Fresh dishes made every day. Search, filter and add to your cart.</p></div>
+  <section class="card filters" aria-label="Filters">
+    <div class="filter-row">
+      <div class="search-box"><label class="sr-only" for="search">Search dishes</label><input class="input" id="search" type="search" placeholder="Search dishes, e.g. dosa, biryani…" autocomplete="off"></div>
+      <select class="input" id="sort" aria-label="Sort" style="width:auto"><option value="name">Sort: Name</option><option value="popular">Sort: Popular first</option><option value="price_asc">Price: Low to high</option><option value="price_desc">Price: High to low</option></select>
+      <label class="switch"><input type="checkbox" id="only-available"><span class="track"></span> Available only</label>
+      <button class="btn btn-ghost btn-sm" id="reset-filters" type="button">Reset</button>
+    </div>
+    <div class="chips" id="category-chips" aria-label="Categories"></div>
+    <div class="chips" id="veg-chips" aria-label="Diet"><button class="chip" data-veg="">All</button><button class="chip" data-veg="veg">🟢 Veg</button><button class="chip" data-veg="nonveg">🔴 Non-veg</button></div>
+  </section>
+  <p class="muted" id="result-count" aria-live="polite"></p>
+  <div id="menu-grid"></div>
+</div></main>
+<div id="site-footer"></div>
+<div id="toast-root"></div>
+<script src="js/config.js"></script>
+<script src="js/main.js"></script>
+<script src="js/menu.js"></script>
+</body>
+</html>

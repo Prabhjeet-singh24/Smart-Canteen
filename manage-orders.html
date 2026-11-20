@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Manage orders · Smart Canteen</title>
+<link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/dashboard.css">
+<link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body class="admin" data-page="admin-orders" data-root="../">
+<div id="admin-sidebar"></div>
+<div class="admin-wrap">
+  <header id="admin-topbar"></header>
+  <main class="admin-content">
+    <div class="toolbar">
+      <div class="grow"><label class="sr-only" for="order-search">Search orders</label><input class="input" id="order-search" type="search" placeholder="Search by order no., name, student ID or phone…"></div>
+      <select class="input" id="order-status" aria-label="Filter by status"></select>
+      <button class="btn btn-outline" id="refresh-orders">↻ Refresh</button>
+      <span class="muted" id="order-count"></span>
+    </div>
+    <section class="card" id="orders-table"></section>
+  </main>
+</div>
+<div id="toast-root"></div>
+<script src="../js/config.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/admin.js"></script>
+</body>
+</html>
